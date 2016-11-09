@@ -1,0 +1,132 @@
+.nav_01 {
+    .navWrap {
+        @include screen(pcSmall) {
+            //桌機-導覽列顏色
+            background-color: rgba(0, 0, 0, 1);
+        }
+        .logoWrap {
+            //手機-導覽列顏色
+            background-color: rgba(0, 0, 0, 1);
+            @include screen(pcSmall) {
+                background-color: transparent;
+            }
+        }
+        .menuWrap {
+            ul.menu {
+                li {
+                    @include screen(pcSmall) {
+                        ul {
+                            //background-color: rgba(188, 0, 45, 1);
+                        }
+                        &:hover ul {
+                            li {
+                                //background-color: rgba(188, 0, 45, 1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header_01 {
+    .headerWrap {
+        .visualBg {
+            //手機－主視覺圖片
+            background-image: url('../img/visual_m.jpg');
+            //主視覺圖片垂直靠上或垂直置中對齊
+            //background-position: center top;
+            @include screen(tb) {
+                //平板－主視覺圖片
+                background-image: url('../img/visual_tb.jpg');
+            }
+            @include screen(pcSmall) {
+                //桌機－主視覺圖片
+                background-image: url('../img/visual_pc.jpg');
+            }
+        }
+        .detail {
+            //描述背景色
+            background-color: rgba(0,0,0,1);
+            .detailWrap {
+                .txtWrap {
+                    //描述文字顏色
+                    //color: rgba(255,255,255,1);
+                }
+                a.link {
+                    //馬上閱讀按鈕顏色
+                    background-color: rgba(185,200,208,1);
+                    &:hover {
+                        //馬上閱讀按鈕顏色－滑過
+                        background-color: rgba(185,200,208,0.9);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.layout_04 {
+    .layoutWrap {
+        .sliderWrap {
+            .slidesWrap {
+                ul.slides {
+                    li {
+                        a.img {
+                            .linkWrap {
+                                background-color: rgba(0, 0, 0, 0.3);
+                            }
+                        }
+                        .txtWrap {
+                            a.txt {
+                                text-align: center;
+                                h3 {
+                                    @include screen(pcLarge) {
+                                        @include linear-gradient(to right, transparent 50%, $black 50%);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.layout_05 {
+    .layoutWrap {
+        ul.article {
+            li {
+                a.img {
+                    .linkWrap {
+                        background-color: rgba(0, 0, 0, 0.3);
+                    }
+                }
+                .txtWrap {
+                    a.txt {
+                        h3 {
+                            @include screen(pcLarge) {
+                                @include linear-gradient(to right, transparent 50%, $black 50%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer_01 {
+    //背景色
+    background-color: rgba(0,0,0,1);
+}
+
+ul.fixedBtn_01,
+.fixedBtnCover_01 .coverWrap .main .mainWrap .item ul.share {
+    li .material_btn {
+        //按鈕色
+        background-color: rgba(185,200,208,1);
+    }
+}
