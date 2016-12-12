@@ -76,9 +76,9 @@
         <div class="menuWrap">
           <ul class="menu">
             <li><a>
-                <h4>感動瞬間</h4></a></li>
+                <h4>職人視野</h4></a></li>
             <li><a>
-                <h4>敬請期待</h4></a></li>
+                <h4>感動瞬間</h4></a></li>
             <li><a>
                 <h4>敬請期待</h4></a></li>
           </ul>
@@ -131,6 +131,11 @@
       </div>
     </header>
     <!-- header01 end-->
+    <!-- layout05_tag-->
+    <section data-menu="true" class="layout_05_tag layout_05">
+      <div data-engtitle="SELECTED ARTICLES" data-title=" 職人目光，全新視野" data-description="" data-tags="[&quot;職人目光&quot;]" data-filter="[59113, 59117, 59114, 59115, 59116]" class="layoutWrap"></div>
+    </section>
+    <!-- layout05_tag end-->
     <!-- layout05-->
     <section data-menu="true" class="layout_05">
       <div class="layoutWrap">
@@ -363,9 +368,29 @@
     </div>
     <!-- fixedBtn01 end-->
     <!-- js-->
+    <!--l_05_tag template-->
+    <script id="template-l05-start" type="text/x-handlebars-template">
+      <h2 class="title">SELECTED ARTICLES</h2>
+      <div class="detail"></div>
+      <div class="subTitleWrap">
+        <p class="subTitle"> </p>
+      </div><ul class="article">
+    </script>
+    <script id="template-l05" type="text/x-handlebars-template">
+      <li class="fadeOut"><a href="https://www.juksy.com/archives/{{id}}" target="_blank" data-imgload="https://static.juksy.com/static/600x600/files/articles/{{id}}/cover/{{body.square}}" class="img imgLoading">
+          <div class="linkWrap">
+            <div class="linkBorder"><span class="ch">馬上閱讀</span><span class="ch arrow">→</span></div>
+          </div></a>
+        <div class="txtWrap"><a data-dotdotdot="true" href="https://www.juksy.com/archives/{{id}}" target="_blank" class="txt">
+            <h3>{{body.title}}</h3></a></div>
+      </li>
+    </script>
+    <script id="template-l05-end" type="text/x-handlebars-template"></ul></script>
+    <!--l_05_tag template end-->
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jQuery.dotdotdot/1.7.4/jquery.dotdotdot.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script>
     <script src="js/index.js"></script>
     <!-- third party-->

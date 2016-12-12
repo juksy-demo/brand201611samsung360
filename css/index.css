@@ -1725,8 +1725,9 @@ img {
   content: '';
   display: block;
   width: 100px;
-  margin: 0px auto 10px auto;
-  border-bottom: 5px solid #000;
+  height: 5px;
+  margin: 5px auto 10px auto;
+  background-color: #000;
 }
 
 .layout_05 .layoutWrap .detail {
@@ -1734,6 +1735,33 @@ img {
   text-align: center;
   font-size: 30px;
   line-height: 1.5em;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1024px) {
+  .layout_05 .layoutWrap .subTitleWrap {
+    width: 970px;
+    margin: 0 auto 0 auto;
+  }
+}
+
+.layout_05 .layoutWrap .subTitleWrap .subTitle {
+  margin: 20px 20px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (min-width: 768px) {
+  .layout_05 .layoutWrap .subTitleWrap .subTitle {
+    margin: 20px 40px 0 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .layout_05 .layoutWrap .subTitleWrap .subTitle {
+    width: 65%;
+    margin: 20px auto 0 auto;
+    text-align: center;
+  }
 }
 
 .layout_05 .layoutWrap ul.article {
